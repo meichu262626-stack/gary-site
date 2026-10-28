@@ -2,6 +2,7 @@ import { Icon } from "./icons";
 import HeaderButtons from "./HeaderButtons";
 
 export default function Profile({ profile, social }) {
+  const line = social.find((s) => s.platform === "line");
   return (
     <div className="profile">
       <div className="profile-cover">
@@ -11,7 +12,7 @@ export default function Profile({ profile, social }) {
         <div className="profile-name">
           <h1>{profile.name}</h1>
         </div>
-        <HeaderButtons name={profile.name} />
+        <HeaderButtons name={profile.name} avatar={profile.avatar} lineUrl={line?.url} />
       </div>
       <p className="profile-desc">{profile.description}</p>
       <ul className="social">

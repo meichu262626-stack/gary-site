@@ -142,6 +142,7 @@ function IntegrationBlock({ b, integrations }) {
         </div>
         <div className="social-card-body">
           <div className="social-card-left">
+            <p className="social-card-label">{isIg ? "Instagram" : "Threads"}</p>
             <div className="social-card-name">{data.title}</div>
             <div className="social-card-avatar">
               <img src={data.avatar} alt={data.title} loading="lazy" />

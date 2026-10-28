@@ -181,6 +181,11 @@ ul {
   border-bottom-color: var(--theme);
 }
 
+/* 分頁內容（原頁是把分頁嵌在下面，左右各縮 16px） */
+.tab-embed {
+  padding: 16px 16px 0;
+}
+
 .tab-content {
   padding-top: 16px;
 }
@@ -328,6 +333,14 @@ ul {
   font-weight: 600;
   text-align: center;
   cursor: pointer;
+  transition: background-color 0.2s;
+}
+/* 原頁：滑過或點擊時填滿主題色、字變白 */
+.list-btn:hover,
+.list-btn:focus {
+  background: var(--theme);
+  color: #fff;
+  outline: none;
 }
 .list-btn.pad-lg {
   padding: 12px 48px;
@@ -417,7 +430,12 @@ ul {
 .social-card-left {
   flex: 0 0 154px;
   min-width: 0;
-  padding-top: 18px;
+}
+/* 原頁有這行字但是透明的（給螢幕閱讀器用） */
+.social-card-label {
+  font-size: 12px;
+  line-height: 18px;
+  color: transparent;
 }
 .social-card-name {
   font-size: 14px;
@@ -584,31 +602,79 @@ ul {
   justify-content: center;
 }
 .modal-card {
+  position: relative;
   background: #fff;
+  color: #1a202c;
   border-radius: 12px;
-  padding: 20px;
+  padding: 24px;
+  width: calc(100% - 32px);
+  max-width: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 12px;
+  text-align: center;
 }
-.modal-close {
-  color: #333;
-  font-weight: 600;
+.qr-card {
+  align-self: flex-start;
+  margin-top: 24px;
 }
-.toast {
-  position: fixed;
-  left: 50%;
-  bottom: 32px;
-  transform: translateX(-50%);
-  z-index: 60;
-  background: rgba(0, 0, 0, 0.85);
-  color: #fff;
-  border: 1px solid #333;
+.modal-x {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-size: 22px;
+  line-height: 1;
+  color: #4a5568;
+  padding: 4px;
+}
+.modal-title {
+  font-weight: 700;
+  font-size: 16px;
+}
+.qr-url {
+  font-size: 13px;
+  color: #4a5568;
+  word-break: break-all;
+}
+.fav-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.fav-card .modal-title {
+  font-size: 20px;
+}
+.fav-sub {
+  font-size: 14px;
+  color: #4a5568;
+}
+.fav-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
   padding: 10px 16px;
   border-radius: 8px;
+  background: #06c755;
+  color: #fff;
+  font-weight: 600;
+}
+.copied-pop {
+  position: absolute;
+  left: 16px;
+  top: 0;
+  z-index: 5;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #d9d9d9;
+  background: var(--card-bg);
+  color: #fff;
   font-size: 14px;
-  max-width: calc(100% - 32px);
+  line-height: 20px;
+  white-space: nowrap;
 }
 
 /* ---------- 手機（寬度 < 480px）：封面照片滿版、貼齊頂端 ---------- */
