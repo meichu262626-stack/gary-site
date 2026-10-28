@@ -6,7 +6,7 @@
 - 圖片：`public/images/`
 - 外觀：`app/globals.css`（數值照原頁面量的）
 - 區塊元件：`components/Blocks.js`
-- 重新從備份匯入：`python3 -I scripts/convert_portaly.py`
+- 重新從備份匯入：`python3 -I scripts/convert_portaly.py`，再跑 `node scripts/optimize_images.mjs` 壓縮圖片
 
 本機預覽：
 
