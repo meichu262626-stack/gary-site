@@ -1,0 +1,7 @@
+:HL["/gary-site/_next/static/chunks/1_3a87hw74mny.css","style"]
+:HL["https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800;900&family=Noto+Sans+TC:wght@400;500;600;700;800;900&display=swap","style"]
+:HL["/gary-site/images/ai_avatar.webp","image"]
+3:[["children",{"s":"__PAGE__","h":160}]]
+2:[["children",{"s":{"n":"slug","t":"d","k":"about","s":[]},"h":65632,"c":"$Q3"}]]
+1:[["children",{"s":"tab","h":131168,"c":"$Q2"}]]
+0:{"b":"MSZmw-Yva31kUtIkwsI7w","t":{"t":{"s":"","h":131152,"c":"$Q1"}}}
