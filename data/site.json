@@ -1,0 +1,516 @@
+{
+  "profile": {
+    "name": "Gary營養師",
+    "description": "▪️國家高考合格營養師\n▪️NASM-CPT 美國運動醫學院教練\n▪️CTSSN 台灣運動營養學會 運動營養認證\n▪️CTSSO 中華民國肥胖學會 體重管理專科認證",
+    "avatar": "/images/ai_avatar.jpg",
+    "theme": "#9dd0e9",
+    "background": "#000000",
+    "seoTitle": "Gary|營養師|減脂",
+    "email": "meichu262626@gmail.com"
+  },
+  "social": [
+    {
+      "platform": "line",
+      "url": "https://line.me/R/ti/p/@555jxqvn"
+    },
+    {
+      "platform": "threads",
+      "url": "https://www.threads.com/@gary_nutri365"
+    },
+    {
+      "platform": "instagram",
+      "url": "https://www.instagram.com/gary_nutri365"
+    },
+    {
+      "platform": "facebook",
+      "url": "https://www.facebook.com/share/1boGurDarE/?mibextid=wwXIfr"
+    },
+    {
+      "platform": "youtube",
+      "url": "https://youtube.com/@gary_nutri365?si=j6EjGzJYetx1za31"
+    },
+    {
+      "platform": "tiktok",
+      "url": "https://www.tiktok.com/@gary_nutri365"
+    }
+  ],
+  "tabs": {
+    "home": "減肥線上教學",
+    "others": [
+      {
+        "text": "免費資源專區",
+        "url": "/pages/about"
+      }
+    ]
+  },
+  "integrations": {
+    "threads": {
+      "title": "𝐆𝐚𝐫𝐲｜𝟏𝟖𝟎營養師",
+      "description": "💡幫助百位學員 開心吃不復胖\n▪️國家營養師 體重管理專科認證\n▪️NASM-CPT 美國運動醫學院教練\n▪️45頁營養筆記 點擊下方連結領取",
+      "avatar": "/images/threads_v_t51.2885-19_464264571_410586062104407_964067145397412101_n.jpg",
+      "followers": 209850
+    },
+    "instagram": {
+      "title": "𝐆𝐚𝐫𝐲｜𝟏𝟖𝟎營養師",
+      "avatar": "/images/ogImage_v_t51.2885-19_464264571_410586062104407_964067145397412101_n.jpg",
+      "posts": [
+        {
+          "href": "https://www.instagram.com/p/DQwBsNBERxm/",
+          "image": "/images/instagram_v_t51.82787-15_573493095_18333434599237963_6046368179463478932_n.jpg"
+        },
+        {
+          "href": "https://www.instagram.com/p/DV3Q5_dkQXJ/",
+          "image": "/images/instagram_v_t51.82787-15_651416655_18350576824237963_4699797837711709905_n.jpg"
+        },
+        {
+          "href": "https://www.instagram.com/p/DeUJRrZGW_H/",
+          "image": ""
+        },
+        {
+          "href": "https://www.instagram.com/p/DeTExmrmY22/",
+          "image": ""
+        },
+        {
+          "href": "https://www.instagram.com/p/DeRoDQ8GRmN/",
+          "image": ""
+        },
+        {
+          "href": "https://www.instagram.com/p/DeQgHfrGV93/",
+          "image": ""
+        }
+      ]
+    }
+  },
+  "blocks": [
+    {
+      "id": "FB2g3qCEzL5eqgjSvSkM",
+      "type": "integrations",
+      "platform": "threads",
+      "url": "https://www.threads.com/@gary_nutri365"
+    },
+    {
+      "id": "8rq6eTyLuMZcuSHlHS7k",
+      "type": "integrations",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/gary_nutri365"
+    },
+    {
+      "id": "vPFKZ21qGtJyCUfTjud6",
+      "type": "title",
+      "text": "從自己的生活出發，\n結合減肥真正重要的行為，\n找到最適合自己的減肥模式\n減肥就該開開心心",
+      "align": "center",
+      "size": "md",
+      "headerFill": "transparent",
+      "bold": true
+    },
+    {
+      "id": "C58bpaFtcyIAQ3B083yr",
+      "type": "title",
+      "html": "<p style=\"text-align:center\"><strong>為什麼減肥反覆失敗？</strong></p><p style=\"text-align:center\"></p><p style=\"text-align:center\">因為多數人減肥都在追求『快速』而非『成功』無論靠少吃、多動、吃藥、打針 瘦得多快，只要沒辦法一輩子執行下去，復胖就只是時間問題。</p><p></p>",
+      "align": "center",
+      "size": "md",
+      "headerFill": "default",
+      "bold": false
+    },
+    {
+      "id": "Qfgc0h1yT63pfF50PO5E",
+      "type": "divider",
+      "variant": "double",
+      "borderWidth": "4px"
+    },
+    {
+      "id": "M5RxP6YHoI3AtLqHOoHU",
+      "type": "title",
+      "text": "什麼是生活化減肥？",
+      "align": "center",
+      "size": "xl",
+      "color": "#a3c9d8",
+      "bold": true
+    },
+    {
+      "id": "ofZFCQioNYGHjiWJqMgr",
+      "type": "title",
+      "text": "是讓你學會減肥這個技能，\n不要再花一堆時間和錢反覆處理減肥這個問題了！",
+      "align": "center",
+      "size": "md",
+      "color": "bright",
+      "bold": false
+    },
+    {
+      "id": "qvDx4eqxjeW7Yy3fg3Ez",
+      "type": "banner",
+      "items": [
+        {
+          "image": "/images/blocks_qvDx4eqxjeW7Yy3fg3Ez_itemMap.tTTtfJcgl8lv7gdQAU7kO.image.png"
+        }
+      ]
+    },
+    {
+      "id": "mpewZDlWZMx9yb8iwNa0",
+      "type": "banner",
+      "items": [
+        {
+          "image": "/images/blocks_mpewZDlWZMx9yb8iwNa0_itemMap.O0VvIUfF9Wq_CggrIUuCB.image.png"
+        }
+      ]
+    },
+    {
+      "id": "UQynodA5r9Mjqq2zyaYc",
+      "type": "square",
+      "items": [
+        {
+          "image": "/images/blocks_UQynodA5r9Mjqq2zyaYc_itemMap.aXrmJTiQCMCsrQ-Bg8FWp.image.png"
+        }
+      ]
+    },
+    {
+      "id": "sDAzXgCTpvSSUzzYzKZA",
+      "type": "square",
+      "items": [
+        {
+          "image": "/images/blocks_sDAzXgCTpvSSUzzYzKZA_itemMap.aXrmJTiQCMCsrQ-Bg8FWp.image.png"
+        }
+      ]
+    },
+    {
+      "id": "RXn7vKKDH7UuPNQTmSKV",
+      "type": "divider",
+      "variant": "double",
+      "borderWidth": "4px",
+      "color": "#9cc6d3"
+    },
+    {
+      "id": "CskLOVBPOH0bahf4nXxM",
+      "type": "title",
+      "text": "這是我的作法",
+      "align": "center",
+      "size": "xl",
+      "color": "#97b6c5",
+      "bold": true
+    },
+    {
+      "id": "10cTmu6nytPG5ICFhSsZ",
+      "type": "title",
+      "text": "1. 建立正確觀念，明白減肥底層邏輯\n2. 從生活出發，建立屬於自己的減肥計劃\n3. 在營養師的帶領下，陪你找到平衡點，開心減重不復胖",
+      "align": "center",
+      "size": "sm",
+      "color": "bright",
+      "bold": true
+    },
+    {
+      "id": "zhLeY8Eo3mCqIg5JPtch",
+      "type": "title",
+      "html": "<h3 style=\"text-align:center\"><strong>把你原本就會吃的食物</strong></h3><h3 style=\"text-align:center\"><strong>⬇</strong></h3><h3 style=\"text-align:center\"><strong>調成合適的比例與份量</strong></h3><h3 style=\"text-align:center\"><strong>⬇</strong></h3><h3 style=\"text-align:center\"><strong>配合好執行的小步驟</strong></h3><h3 style=\"text-align:center\"><strong>（睡眠、作息、活動量）</strong></h3><h3 style=\"text-align:center\"><strong>⬇</strong></h3><h3 style=\"text-align:center\"><strong>體重自然往下✅</strong></h3>",
+      "align": "center",
+      "size": "md",
+      "color": "bright",
+      "bold": true
+    },
+    {
+      "id": "prCB3L9dRoKaErvHdUWD",
+      "type": "square",
+      "items": [
+        {
+          "image": "/images/blocks_prCB3L9dRoKaErvHdUWD_itemMap.fn-hjUivIB0yVX5o4Ss4K.image.png"
+        }
+      ]
+    },
+    {
+      "id": "GLdw4Y14dpsHZMVWnFr9",
+      "type": "title",
+      "text": "如果你也想把減肥融入生活\n接下來是我會手把手教你的詳細內容⬇",
+      "align": "center",
+      "size": "sm",
+      "color": "bright",
+      "bold": true
+    },
+    {
+      "id": "iHcGzu9zRJEmkCzuGlZc",
+      "type": "divider",
+      "variant": "double",
+      "borderWidth": "4px",
+      "color": "#9cc6d3"
+    },
+    {
+      "id": "p4CIddgfCwv29o0wHWT2",
+      "type": "title",
+      "text": "生活化減肥計畫內容",
+      "align": "center",
+      "size": "xl",
+      "color": "#adcad5",
+      "bold": true
+    },
+    {
+      "id": "0LD5eOnIsWVI8bPNKW8r",
+      "type": "banner",
+      "items": [
+        {
+          "image": "/images/blocks_0LD5eOnIsWVI8bPNKW8r_itemMap.J3deHXv42DVwrlkL_0uxQ.image.png"
+        }
+      ]
+    },
+    {
+      "id": "VSdHpN1X5kyX6jfMCCxI",
+      "type": "double",
+      "items": [
+        {
+          "image": "/images/blocks_VSdHpN1X5kyX6jfMCCxI_itemMap.L9tj_SzfumPQ0ImcP57nn.image.png"
+        },
+        {
+          "image": "/images/blocks_VSdHpN1X5kyX6jfMCCxI_itemMap.hngg-9gKCOvKOIlBO0LVO.image.png"
+        }
+      ]
+    },
+    {
+      "id": "Y4OjQRNpjheMfKWlGojp",
+      "type": "double",
+      "items": [
+        {
+          "image": "/images/blocks_Y4OjQRNpjheMfKWlGojp_itemMap.L9tj_SzfumPQ0ImcP57nn.image.png"
+        },
+        {
+          "image": "/images/blocks_Y4OjQRNpjheMfKWlGojp_itemMap.hngg-9gKCOvKOIlBO0LVO.image.png"
+        }
+      ]
+    },
+    {
+      "id": "aJ0bcYdbOhnK35eTdeE9",
+      "type": "divider",
+      "variant": "double",
+      "borderWidth": "4px"
+    },
+    {
+      "id": "tQlsRCRQdDqDDestZFR1",
+      "type": "title",
+      "text": "大基數減重",
+      "align": "center",
+      "size": "xl",
+      "bold": true
+    },
+    {
+      "id": "udYAhlPwA4qoRqLNNuWA",
+      "type": "square",
+      "items": [
+        {
+          "image": "/images/blocks_udYAhlPwA4qoRqLNNuWA_itemMap.HCmmiHdTcKHHk7NUk5CiD.image.png"
+        }
+      ]
+    },
+    {
+      "id": "IvHIRH2RlMb2CbGWXM0j",
+      "type": "square",
+      "items": [
+        {
+          "image": "/images/blocks_IvHIRH2RlMb2CbGWXM0j_itemMap.6WK9RgSHUMzsnx91V_CP7.image.png"
+        }
+      ]
+    },
+    {
+      "id": "VLeoSL0hBWIfNyJclXgj",
+      "type": "title",
+      "text": "小基數減脂",
+      "align": "center",
+      "size": "xl",
+      "bold": true
+    },
+    {
+      "id": "y7ePmGElDmwM6FS1WBRd",
+      "type": "square",
+      "items": [
+        {
+          "image": "/images/blocks_y7ePmGElDmwM6FS1WBRd_itemMap.fPWIRLz0lVpUEcKbBAg-l.image.png"
+        }
+      ]
+    },
+    {
+      "id": "xvZymU5vVryTEbUNTp99",
+      "type": "title",
+      "text": "長期維持體態",
+      "align": "center",
+      "size": "xl",
+      "bold": true
+    },
+    {
+      "id": "LjuB8zAoMpqRBugXMrHn",
+      "type": "square",
+      "items": [
+        {
+          "image": "/images/blocks_LjuB8zAoMpqRBugXMrHn_itemMap.6WK9RgSHUMzsnx91V_CP7.image.png"
+        }
+      ]
+    },
+    {
+      "id": "TXg4JaLvs31KaeMsANf9",
+      "type": "divider",
+      "variant": "double",
+      "borderWidth": "4px"
+    },
+    {
+      "id": "Kcyn87NLkhDNNjhC5XgU",
+      "type": "title",
+      "text": "-FAQ-\n減肥常見QA",
+      "align": "center",
+      "size": "xl",
+      "headerFill": "transparent",
+      "bold": true
+    },
+    {
+      "id": "NUhAUe1mSeGpYj3JynWb",
+      "type": "list",
+      "size": "sm",
+      "withDescription": true,
+      "items": [
+        {
+          "text": "減肥一定得餓肚子嗎？",
+          "description": "減肥餓肚子，先失敗一半，多數人餓肚子就是為了讓肥可以減快一點，但殊不知餓肚子對自己與身體的壓力，影響荷爾蒙分泌，長期而言反而會讓減脂不順利，更不用說，靠餓肚子減肥，堅持不下去只是時間問題，當不繼續餓就是復胖的開始"
+        },
+        {
+          "text": "不吃晚餐瘦比較快嗎？",
+          "description": "很多人覺得不吃晚餐很神，因為初期體重狂掉，殊不知那只是水分。當水分排光，體重也就卡住了，而直接少掉一餐，雖然創造了熱量赤字，但這個『赤字』太大了，只會讓身體啟動『節能模式』降低代謝，而掉髮，睡不好、生理期不準時也一起送給你。"
+        },
+        {
+          "text": "減肥一定要運動嗎？",
+          "description": "絕大多數人減肥都不需要運動，上方的成功案例，多數都沒有運動習慣。運動只是減肥的加分項，而不是必須，當平常沒有運動習慣，而為了減肥開始運動，只會把自己搞得很累壓力又大反而影響減肥。"
+        },
+        {
+          "text": "減肥必須餐餐原型食物才能瘦嗎？",
+          "description": "原型食物因為營養密度高，確實很適合在減脂時食用，但這並不代表我們餐餐都需要吃原型食物。減肥，不是把飲食吃到100分才能瘦，我帶了上百位學員成功減肥，他們來找我前大多都是餐餐原型食物，你可能會想，蛤我以為會是吃得很多很放縱誒，不不不，如果是那樣，他們自己管住嘴就好，沒必要花錢找人管著自己的嘴，所以通常來找我的都是很自律肥仍減不下來的。那為什麼會這樣？因為大多數人減肥只知道少吃多動，卻忽略了壓力，壓力一大，影響荷爾蒙分泌，脂肪代謝不會順利。這就是為何我一直強調要把減肥融入生活，除了可以維持更久實現不復胖，也為了讓學員在減肥過程中可以更加順利有效率。"
+        }
+      ]
+    },
+    {
+      "id": "qOqxS3vKWrhIjbXeepX5",
+      "type": "title",
+      "html": "<p style=\"text-align:center\">我這邊有個一對一個人減脂測驗</p><p style=\"text-align:center\">大約 1分鐘能完成</p><p style=\"text-align:center\">做完我就能幫你找出目前卡關的原因</p><p style=\"text-align:center\">（如飲食、代謝或內分泌）</p><p style=\"text-align:center\"></p><p style=\"text-align:center\">你想做做看嗎？</p>",
+      "align": "center",
+      "size": "md",
+      "headerFill": "transparent",
+      "bold": false
+    },
+    {
+      "id": "GRlClJhUZEC1Xsf9dNKD",
+      "type": "banner",
+      "items": [
+        {
+          "text": "生活減肥法個人測驗",
+          "image": "/images/blocks_GRlClJhUZEC1Xsf9dNKD_itemMap.QYYcBYN7tAVGUqAEKSHT-.image.png",
+          "url": "https://tracking.dietitianbgg.fit/q/g"
+        }
+      ]
+    },
+    {
+      "id": "Jj84404hgx0tU1yjfCc1",
+      "type": "list",
+      "size": "lg",
+      "withDescription": true,
+      "items": [
+        {
+          "text": "分析結果這裡看！",
+          "description": "做完測驗記得加入『 Gary 營養師官方Line＠』領取報告",
+          "icon": "line",
+          "animation": "pulse",
+          "url": "https://lin.ee/mqol4IP"
+        }
+      ]
+    },
+    {
+      "id": "PItluvDKR5LlT9sEDfOD",
+      "type": "divider",
+      "variant": "double",
+      "borderWidth": "4px"
+    },
+    {
+      "id": "uLcoAKJNegaCLu9XEt3Q",
+      "type": "title",
+      "text": "免費減肥諮詢",
+      "align": "center",
+      "size": "xl",
+      "bold": true
+    },
+    {
+      "id": "GmhPs0GaIlbgJu1Y9CjA",
+      "type": "title",
+      "html": "<p style=\"text-align:left\">諮詢內容會協助你：</p><p style=\"text-align:left\">✔ 判斷你目前卡關原因</p><p style=\"text-align:left\">✔ 協助設定目標</p><p style=\"text-align:left\">✔ 初步規劃飲食方向</p><p style=\"text-align:left\">✔ 評估是否適合加入生活化減肥計畫</p>",
+      "align": "center",
+      "size": "md",
+      "bold": false
+    },
+    {
+      "id": "lBO2Sah8gSmlvWOINlqO",
+      "type": "title",
+      "text": "如果你想找到符合自己生活模式\n舒服並能長期維持的減肥方式\n歡迎與我預約諮詢👇",
+      "align": "center",
+      "size": "md",
+      "color": "bright",
+      "bold": true
+    },
+    {
+      "id": "JeS9oPSVMKsqjFmPmVFw",
+      "type": "list",
+      "size": "lg",
+      "withDescription": false,
+      "items": [
+        {
+          "text": "Gary營養師 生活減肥諮詢",
+          "icon": "website",
+          "animation": "pulse",
+          "url": "https://tracking.dietitianbgg.fit/consult/g"
+        }
+      ]
+    },
+    {
+      "id": "4VuIUStzcqCNlDqrJzeC",
+      "type": "title",
+      "text": "諮詢名額有限，每週只收 15 位，額滿順延。",
+      "align": "center",
+      "size": "sm",
+      "bold": true
+    }
+  ],
+  "pages": [
+    {
+      "slug": "about",
+      "title": "關於",
+      "blocks": [
+        {
+          "id": "3Yr2cVO3PMKGOa0KsiGe",
+          "type": "collection",
+          "items": [
+            {
+              "text": "Gary營養師 45頁營養筆記",
+              "description": "<p style=\"text-align:left\"></p>",
+              "cta": "true",
+              "image": "/images/pagesBlocks_3Yr2cVO3PMKGOa0KsiGe_itemMap.DY0MZIuRqar8PLIBlwPP-.image.png",
+              "url": "https://gary365.pse.is/92t47v"
+            }
+          ]
+        },
+        {
+          "id": "rzUPQ6Yhx2D2CeXHh0Ge",
+          "type": "collection",
+          "items": [
+            {
+              "text": "領取減脂外食懶人包",
+              "cta": "true",
+              "image": "/images/pagesBlocks_rzUPQ6Yhx2D2CeXHh0Ge_itemMap.2NU1zv3o9cG2cathnErO3.image.png",
+              "url": "https://dietitianbgg.kit.com/bba0b12ed2"
+            }
+          ]
+        },
+        {
+          "id": "vc2NpUQB1oo8FHRcYdHhr",
+          "type": "collection",
+          "items": [
+            {
+              "text": "90 天減脂全攻略",
+              "description": "<p></p>",
+              "cta": "true",
+              "image": "/images/pagesBlocks_vc2NpUQB1oo8FHRcYdHhr_itemMap.YFFJQdMh_XCDYWAZNaDxG.image.png",
+              "url": "https://www.notion.so/90-c53aedef0ba182cc96cf0162bc6bf2e9"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

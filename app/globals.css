@@ -1,0 +1,631 @@
+/* 數值照原 Portaly 頁面量出來的（深色模式、主題色 #9dd0e9） */
+:root {
+  --theme: #9dd0e9;
+  --page-bg: #000000;
+  --card-bg: #0f0f0f;
+  --shadow-md: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  --shadow-sm: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 背景色只放在 html，手機版封面照片（z-index:-1）才不會被蓋住 */
+html {
+  background: var(--page-bg);
+}
+
+body {
+  font-family: "Noto Sans", "Noto Sans TC", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1;
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 32px 16px 0;
+}
+
+.home {
+  padding: 32px 0 0;
+}
+
+/* ---------- 封面與個人資料 ---------- */
+.profile {
+  padding-bottom: 16px;
+}
+
+.profile-cover {
+  position: relative;
+  height: 400px;
+}
+
+.profile-cover-mask {
+  height: 400px;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(#000 50%, transparent);
+  mask-image: linear-gradient(#000 50%, transparent);
+}
+
+.profile-cover-mask img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.profile-name {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 386px;
+  padding: 0 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-name h1 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26.4px;
+  color: #fff;
+  text-align: center;
+}
+
+.cover-buttons {
+  position: absolute;
+  top: 16px;
+  left: 0;
+  right: 0;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.round-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  color: var(--theme);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-desc {
+  margin-top: 8px;
+  padding: 16px 24px 0;
+  line-height: 26px;
+  color: #fff;
+  text-align: center;
+  white-space: pre-wrap;
+}
+
+.social {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.social a {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  color: var(--theme);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---------- 分頁標籤 ---------- */
+.tabs-wrap {
+  margin-top: 16px;
+}
+
+.tabs {
+  display: flex;
+  border-bottom: 2px solid #333;
+}
+
+.tab {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  margin-bottom: -2px;
+  font-weight: 900;
+  color: var(--theme);
+  border-bottom: 2px solid #808080;
+}
+
+.tab.active {
+  border-bottom-color: var(--theme);
+}
+
+.tab-content {
+  padding-top: 16px;
+}
+
+/* ---------- 區塊共用 ---------- */
+.block + .block {
+  margin-top: 16px;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.reveal.shown {
+  opacity: 1;
+  transform: none;
+}
+
+.block-item {
+  border-radius: 16px;
+  box-shadow: var(--shadow-md);
+}
+
+/* 標題 */
+.title {
+  white-space: pre-wrap;
+}
+.t-sm {
+  font-size: 16px;
+  line-height: 24px;
+}
+.t-md {
+  font-size: 20px;
+  line-height: 30px;
+}
+.t-lg {
+  font-size: 28px;
+  line-height: 42px;
+}
+.t-xl {
+  font-size: 36px;
+  line-height: 54px;
+}
+
+/* 文字方塊（富文字） */
+.rich {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  white-space: pre-wrap;
+}
+.rich-box {
+  border-radius: 16px;
+  padding: 12px 20px;
+}
+.rich-box.filled {
+  background: var(--card-bg);
+  box-shadow: var(--shadow-sm);
+}
+.rich-inner {
+  line-height: 28px;
+}
+.rich-inner p {
+  min-height: 28px;
+}
+.rich-inner h3 {
+  font-size: 20px;
+  line-height: 35px;
+}
+.rich-inner h2 {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+/* 分隔線 */
+.divider {
+  width: 100%;
+}
+
+/* 圖片（橫幅 / 方形 / 雙圖） */
+.img-grid {
+  display: grid;
+  gap: 16px;
+}
+.img-cell {
+  position: relative;
+  margin-bottom: 4px;
+}
+.img-link {
+  display: block;
+  position: relative;
+}
+.img-clip {
+  border-radius: 14px;
+  overflow: hidden;
+}
+.img-ratio {
+  position: relative;
+}
+.img-ratio img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.img-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10px 14px;
+  border-radius: 0 0 14px 14px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8) 90%);
+}
+.img-caption span {
+  display: block;
+  padding-left: 6px;
+  font-size: 12.5px;
+  font-weight: 500;
+  line-height: 18.75px;
+  color: #fff;
+  white-space: pre-wrap;
+}
+
+/* 按鈕列表（含 FAQ） */
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.list-btn {
+  position: relative;
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 48px;
+  border: 2px solid var(--theme);
+  border-radius: 16px;
+  box-shadow: var(--shadow-sm);
+  color: var(--theme);
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+}
+.list-btn.pad-lg {
+  padding: 12px 48px;
+}
+.l-sm {
+  font-size: 20px;
+  line-height: 30px;
+}
+.l-lg {
+  font-size: 28px;
+  line-height: 42px;
+}
+.l-lg-long {
+  font-size: 24px;
+  line-height: 36px;
+}
+.list-text {
+  position: relative;
+}
+.list-desc {
+  display: block;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}
+.list-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+.pulse,
+.pulse-soft {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+/* 社群卡片（Threads / Instagram） */
+.social-card {
+  background: var(--card-bg);
+}
+.social-card-link {
+  display: block;
+  padding: 24px;
+}
+.social-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  color: #fff;
+}
+.social-card-logo {
+  display: flex;
+  align-items: center;
+}
+.follow-btn {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding: 0 24px;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 600;
+  line-height: 16px;
+}
+.follow-btn.ig {
+  background: #0095f6;
+  border-color: #0095f6;
+}
+.social-card-body {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+}
+.social-card-left {
+  flex: 0 0 154px;
+  min-width: 0;
+  padding-top: 18px;
+}
+.social-card-name {
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 21px;
+  color: #fff;
+  margin-bottom: 5.25px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.social-card-avatar {
+  width: 96px;
+  height: 96px;
+  margin-top: 16px;
+  border-radius: 9999px;
+  overflow: hidden;
+}
+.social-card-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.social-card-right {
+  flex: 1;
+  min-width: 0;
+  margin-left: 16px;
+}
+.chip {
+  display: inline-flex;
+  align-items: center;
+  height: 24px;
+  padding: 0 8px;
+  border-radius: 9999px;
+  background: #dbdbdb;
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+}
+.social-card-desc {
+  margin-top: 8px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #fff;
+  white-space: pre-wrap;
+}
+.ig-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+.ig-tile {
+  aspect-ratio: 1 / 1;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.ig-tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@keyframes skeleton {
+  from {
+    background: #1e1e1e;
+  }
+  to {
+    background: #2e2e2e;
+  }
+}
+.skeleton {
+  animation: skeleton 0.8s linear infinite alternate;
+}
+
+/* ---------- 分頁（免費資源專區） ---------- */
+.container:has(.subpage) {
+  padding: 16px 16px 0;
+}
+.sub-header {
+  position: sticky;
+  top: 16px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border-radius: 6px;
+  background: var(--card-bg);
+  box-shadow: var(--shadow-md);
+}
+.back-link {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-weight: 600;
+}
+.sub-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 9999px;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+.sub-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.sub-content {
+  padding: 16px 0;
+}
+.collection-card {
+  border-radius: 6px;
+  overflow: hidden;
+  background: var(--card-bg);
+  color: #fff;
+  box-shadow: var(--shadow-md);
+}
+.collection-img img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+.collection-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  color: var(--theme);
+  font-weight: 600;
+  line-height: 16px;
+}
+.collection-chev {
+  display: flex;
+  margin-left: 8px;
+}
+.collection-desc {
+  padding: 8px 24px 16px;
+  min-height: 24px;
+}
+.collection-desc p:empty {
+  display: none;
+}
+
+/* ---------- 頁尾、彈窗 ---------- */
+.footer {
+  background: var(--card-bg);
+  padding: 24px 0;
+  text-align: center;
+  font-size: 14px;
+  line-height: 21px;
+  color: #777;
+  min-height: 103px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.modal-close {
+  color: #333;
+  font-weight: 600;
+}
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: 32px;
+  transform: translateX(-50%);
+  z-index: 60;
+  background: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  border: 1px solid #333;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  max-width: calc(100% - 32px);
+}
+
+/* ---------- 手機（寬度 < 480px）：封面照片滿版、貼齊頂端 ---------- */
+@media (max-width: 479.98px) {
+  .container {
+    padding: 16px 16px 0;
+  }
+  .home {
+    padding-top: 4px;
+  }
+  .profile-cover-mask {
+    position: absolute;
+    top: -20px;
+    left: -16px;
+    right: -16px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    z-index: -1;
+  }
+}
