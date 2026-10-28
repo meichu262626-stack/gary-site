@@ -127,7 +127,6 @@ site = {
         "theme": data["theme"],
         "background": data["background"]["color"],
         "seoTitle": data["ogTitle"] + data["ogPostfix"],
-        "email": data["contact"]["email"],
     },
     "social": [{"platform": k, "url": social["links"][k]} for k in social["orders"] if social["links"].get(k)],
     "tabs": {

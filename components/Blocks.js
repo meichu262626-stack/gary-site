@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Icon, InstagramWordmark } from "./icons";
 import Reveal from "./Reveal";
 
@@ -11,14 +12,15 @@ function colorOf(color) {
 
 function MaybeLink({ url, className, children, style }) {
   if (!url) return <div className={className} style={style}>{children}</div>;
-  const external = /^https?:/.test(url);
+  if (!/^https?:/.test(url)) {
+    return (
+      <Link href={url} className={className} style={style}>
+        {children}
+      </Link>
+    );
+  }
   return (
-    <a
-      href={url}
-      className={className}
-      style={style}
-      {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-    >
+    <a href={url} className={className} style={style} target="_blank" rel="noopener noreferrer">
       {children}
     </a>
   );
