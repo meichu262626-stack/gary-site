@@ -1,20 +1,26 @@
 import "./globals.css";
-import { getSite } from "../lib/content";
+import { getSite, SITE_ORIGIN, pageUrl } from "../lib/content";
+
+// 分享預覽圖用 JPG（LINE 對 WebP 支援不穩）
+const OG_IMAGE = pageUrl("/og/avatar.jpg");
 
 export async function generateMetadata() {
   const { profile } = await getSite();
   const description = profile.description.replace(/\n/g, " ");
   return {
+    metadataBase: new URL(SITE_ORIGIN),
     title: profile.seoTitle,
     description,
+    alternates: { canonical: pageUrl("/") },
     openGraph: {
       type: "website",
       locale: "zh_TW",
+      url: pageUrl("/"),
       title: profile.seoTitle,
       description,
-      images: [profile.avatar],
+      images: [OG_IMAGE],
     },
-    twitter: { card: "summary_large_image", title: profile.seoTitle, description, images: [profile.avatar] },
+    twitter: { card: "summary_large_image", title: profile.seoTitle, description, images: [OG_IMAGE] },
     robots: { index: true, follow: true },
   };
 }

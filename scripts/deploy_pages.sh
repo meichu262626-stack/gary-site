@@ -6,7 +6,7 @@ cd "$(dirname "$0")/.."
 export PATH="$HOME/.local/node/bin:$PATH"
 
 rm -rf out
-GITHUB_PAGES=1 NEXT_TELEMETRY_DISABLED=1 npx next build
+GITHUB_PAGES=1 SITE_URL=https://meichu262626-stack.github.io NEXT_TELEMETRY_DISABLED=1 npx next build
 touch out/.nojekyll   # 不加的話 GitHub 會忽略 _next 資料夾
 
 REMOTE=$(git remote get-url origin)

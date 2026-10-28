@@ -126,7 +126,7 @@ site = {
         "avatar": local_image(data["avatar"]),
         "theme": data["theme"],
         "background": data["background"]["color"],
-        "seoTitle": data["ogTitle"] + data["ogPostfix"],
+        "seoTitle": data["ogTitle"] + " " + data["ogPostfix"],
     },
     "social": [{"platform": k, "url": social["links"][k]} for k in social["orders"] if social["links"].get(k)],
     "tabs": {

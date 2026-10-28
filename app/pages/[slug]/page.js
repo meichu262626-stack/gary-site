@@ -2,7 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import Blocks from "../../../components/Blocks";
 import { Icon } from "../../../components/icons";
-import { getPage, getSite } from "../../../lib/content";
+import { getPage, getSite, pageUrl } from "../../../lib/content";
 
 export async function generateStaticParams() {
   const site = await getSite();
@@ -12,7 +12,17 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }) {
   const { slug } = await params;
   const [page, site] = await Promise.all([getPage(slug), getSite()]);
-  return page ? { title: `${page.title} by ${site.profile.name}` } : {};
+  if (!page) return {};
+  // 原頁：標題「關於 by Gary營養師」，預覽圖用第一張卡片（public/og/<slug>.jpg）
+  const title = `${page.title} by ${site.profile.name}`;
+  const image = pageUrl(`/og/${slug}.jpg`);
+  const url = pageUrl(`/pages/${slug}/`);
+  return {
+    title,
+    alternates: { canonical: url },
+    openGraph: { title, url, images: [image] },
+    twitter: { title, images: [image] },
+  };
 }
 
 export default async function SubPage({ params }) {
